@@ -1,6 +1,6 @@
-# Thự Động Hóa Tra cứu Phạt Nguội
+# Tự Động Hóa Tra cứu Phạt Nguội
 
-Đây là một script Python sử dụng **Selenium** và **Tesseract OCR** để tự động tra cứu thông tin **phạt nguội phương tiện giao thông** trên website Cục Cảnh Sát Giao Thông Việt Nam. Chương trình sẽ tự động chạy vào **6h sáng** và **12h trưa** mỗi ngày.
+Đây là một script Python sử dụng **Selenium** và **Tesseract OCR** để tự động tra cứu thông tin **Phạt nguội phương tiện giao thông** trên website Cục Cảnh Sát Giao Thông Việt Nam. Chương trình sẽ tự động chạy vào **6h sáng** và **12h trưa** mỗi ngày.
 
 ---
 
@@ -48,11 +48,10 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 - schedule==1.2.2
 ##  Cách chạy chương trình
 Chạy file Python bằng lệnh:
-
+ & C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/python3.12.exe d:/phatnguoi/phatnguoi.py
+python phatnguoi.py
 ```
-python phatnguoiphatnguoi.py
-```
-Màn hình sẽ hiển thị: Đang chạy...
+Màn hình sẽ hiển thị: Đagng thực hiện ...
 Chương trình sẽ tự động chạy mỗi ngày lúc 06:00 và 12:00.
 ##  Cấu trúc thư mục
 ```
