@@ -51,7 +51,7 @@ Chạy file Python bằng lệnh:
  & C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/python3.12.exe d:/phatnguoi/phatnguoi.py
 python phatnguoi.py
 ```
-Màn hình sẽ hiển thị: Đagng thực hiện ...
+Màn hình sẽ hiển thị: Đang thực hiện ...
 Chương trình sẽ tự động chạy mỗi ngày lúc 06:00 và 12:00.
 ##  Cấu trúc thư mục
 ```
