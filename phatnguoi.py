@@ -13,7 +13,7 @@ def PhatNguoi():
     driver.get("https://www.csgt.vn/tra-cuu-phuong-tien-vi-pham.html")
     click_bien_kiem_soat = '#formBSX > div.bot > div:nth-child(1) > input'    
     element_bien_kiem_soat= driver.find_element(By.CSS_SELECTOR, click_bien_kiem_soat)
-    element_bien_kiem_soat.send_keys("17A43331")
+    element_bien_kiem_soat.send_keys("74F168459")
 
     click_phuong_tien = '#formBSX > div.bot > div:nth-child(2) > select > option:nth-child(1)'    
     element_phuong_tien = driver.find_element(By.CSS_SELECTOR, click_phuong_tien)
@@ -45,3 +45,5 @@ print('Đang thực hiện ...')
 while True:
     schedule.run_pending()
     time.sleep(1)  
+#mạng chậm dễ bị lỗi á thầy
+
