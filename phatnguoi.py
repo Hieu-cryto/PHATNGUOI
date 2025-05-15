@@ -8,8 +8,9 @@ import schedule
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"   
 
-def PhatNguoi():
+def PHATNGUOI():
     driver = webdriver.Chrome()
+    try
     driver.get("https://www.csgt.vn/tra-cuu-phuong-tien-vi-pham.html")
     click_bien_kiem_soat = '#formBSX > div.bot > div:nth-child(1) > input'    
     element_bien_kiem_soat= driver.find_element(By.CSS_SELECTOR, click_bien_kiem_soat)
@@ -36,9 +37,11 @@ def PhatNguoi():
     click_xe = '#formBSX > div.bot > input.btnTraCuu'    
     element_xe = driver.find_element(By.CSS_SELECTOR, click_xe)
     element_xe.click()
+    finally:
+    driver.quit()
 
-schedule.every().day.at("06:00").do(PhatNguoi)
-schedule.every().day.at("12:00").do(PhatNguoi)
+schedule.every().day.at("06:00").do(PHATNGUOI)
+schedule.every().day.at("12:00").do(PHATNGUOI)
 
 print('Đang thực hiện ...')
 
