@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 import time
 from PIL import Image
 import pytesseract
@@ -10,11 +11,11 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 
 def PHATNGUOI():
     driver = webdriver.Chrome()
-    try
+    try:
     driver.get("https://www.csgt.vn/tra-cuu-phuong-tien-vi-pham.html")
     click_bien_kiem_soat = '#formBSX > div.bot > div:nth-child(1) > input'    
     element_bien_kiem_soat= driver.find_element(By.CSS_SELECTOR, click_bien_kiem_soat)
-    element_bien_kiem_soat.send_keys("74F168459")
+    element_bien_kiem_soat.send_keys("74F99999")
 
     click_phuong_tien = '#formBSX > div.bot > div:nth-child(2) > select > option:nth-child(1)'    
     element_phuong_tien = driver.find_element(By.CSS_SELECTOR, click_phuong_tien)
@@ -38,7 +39,7 @@ def PHATNGUOI():
     element_xe = driver.find_element(By.CSS_SELECTOR, click_xe)
     element_xe.click()
     finally:
-    driver.quit()
+        driver.quit()
 
 schedule.every().day.at("06:00").do(PHATNGUOI)
 schedule.every().day.at("12:00").do(PHATNGUOI)
